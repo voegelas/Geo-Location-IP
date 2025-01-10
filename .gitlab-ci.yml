@@ -1,0 +1,14 @@
+---
+image: voegelas/debian-devel
+
+test:
+  stage: test
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+  script:
+    - apt-get install -y libmaxminddb-dev
+    - cpanm --quiet --notest --installdeps .
+    - perl Makefile.PL
+    - cover -test
