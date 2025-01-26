@@ -10,7 +10,7 @@ use Object::Pad;
 
 class Geo::Location::IP::Model::ASN;
 
-our $VERSION = 0.001;
+our $VERSION = 0.002;
 
 apply Geo::Location::IP::Role::HasIPAddress;
 
@@ -41,7 +41,7 @@ Geo::Location::IP::Model::ASN - Autonomous System details
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
