@@ -35,7 +35,7 @@
       "runtime" : {
          "requires" : {
             "IP::Geolocation::MMDB" : "1.011",
-            "Object::Pad" : "0.807",
+            "Object::Pad" : "0.810",
             "Scalar::Util" : "0",
             "Socket" : "0",
             "overload" : "0",
