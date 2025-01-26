@@ -37,7 +37,7 @@ __END__
 
 =head1 NAME
 
-Geo::Location::IP::Model::ASN - Details about an Autonomous System
+Geo::Location::IP::Model::ASN - Autonomous System details
 
 =head1 VERSION
 

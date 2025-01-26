@@ -56,7 +56,7 @@ __END__
 
 =head1 NAME
 
-Geo::Location::IP::Model::AnonymousIP - Anonymity details about an IP addresses
+Geo::Location::IP::Model::AnonymousIP - Anonymity details
 
 =head1 VERSION
 

@@ -31,7 +31,7 @@ __END__
 
 =head1 NAME
 
-Geo::Location::IP::Model::Domain - Details about a DNS domain
+Geo::Location::IP::Model::Domain - DNS domain details
 
 =head1 VERSION
 

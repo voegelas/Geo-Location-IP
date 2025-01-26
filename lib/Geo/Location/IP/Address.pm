@@ -107,7 +107,7 @@ version 0.001
 
 =head1 DESCRIPTION
 
-This class contains details on an IP address in a geolocation database.
+This class contains details about an IP address in a geolocation database.
 
 =head1 SUBROUTINES/METHODS
 

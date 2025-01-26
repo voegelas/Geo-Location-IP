@@ -47,7 +47,7 @@ __END__
 
 =head1 NAME
 
-Geo::Location::IP::Model::ISP - Details about an ISP
+Geo::Location::IP::Model::ISP - ISP details
 
 =head1 VERSION
 

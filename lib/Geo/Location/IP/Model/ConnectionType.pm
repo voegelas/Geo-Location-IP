@@ -31,7 +31,7 @@ __END__
 
 =head1 NAME
 
-Geo::Location::IP::Model::ConnectionType - Details about an IP connection
+Geo::Location::IP::Model::ConnectionType - IP connection details
 
 =head1 VERSION
 
