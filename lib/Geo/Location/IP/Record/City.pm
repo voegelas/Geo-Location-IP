@@ -60,7 +60,7 @@ version 0.001
 
 =head1 DESCRIPTION
 
-This class contains details about a city associated with an IP address.
+This class contains details about the city associated with an IP address.
 
 All fields may be undefined.
 

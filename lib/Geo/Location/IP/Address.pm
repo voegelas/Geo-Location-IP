@@ -132,8 +132,8 @@ Objects also stringify to their address.
 
   my $network = $ip_address->network;
 
-Returns the network of the IP address in a geolocation database as a
-L<Geo::Location::IP::Network> object.
+Returns the network of the IP address as a L<Geo::Location::IP::Network>
+object.
 
 =head2 version
 
