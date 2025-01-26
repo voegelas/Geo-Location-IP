@@ -1,0 +1,34 @@
+---
+name: linux
+
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+
+jobs:
+  perl:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: voegelas/debian-devel
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: perl -V
+        run: perl -V
+      - name: Install dependencies
+        run: |
+          apt-get install -y libmaxminddb-dev
+          cpanm --quiet --notest --installdeps .
+      - name: Run tests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        run: |
+          perl Makefile.PL
+          cover -test -report coveralls
