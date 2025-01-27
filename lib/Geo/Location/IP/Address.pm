@@ -137,7 +137,7 @@ object.
 
 =head2 version
 
-  my $version = $network->version;
+  my $version = $ip_address->version;
 
 Returns 4 or 6.
 
