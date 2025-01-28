@@ -10,7 +10,7 @@ use Object::Pad;
 
 class Geo::Location::IP::Record::Postal;
 
-our $VERSION = 0.002;
+our $VERSION = 0.003;
 
 apply Geo::Location::IP::Role::Record::HasConfidence;
 
@@ -43,7 +43,7 @@ Geo::Location::IP::Record::Postal - Postal details
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
