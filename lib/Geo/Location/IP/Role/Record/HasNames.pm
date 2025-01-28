@@ -47,7 +47,7 @@ version 0.003
 
 A mixin that adds the fields C<name> and C<names> to a class.
 
-Requires a C<locales> field or parameter.
+Requires a C<locales> parameter such as ['zh-CN', 'en'].
 
 =head1 SUBROUTINES/METHODS
 

@@ -41,7 +41,7 @@ A mixin that adds the field C<locales> to a class.
 
   my @locales = @{$obj->locales};
 
-Returns an array reference of locale codes such as ['de', 'en', 'zh-CN'].
+Returns an array reference of locale codes such as ['zh-CN', 'en'].
 
 =for Pod::Coverage DOES META new
 
