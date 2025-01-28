@@ -47,8 +47,8 @@ version 0.003
 
 =head1 DESCRIPTION
 
-An error class that signals a non-existing IP address in a geolocation
-database.
+A L<Geo::Location::IP::Error::Generic> subclass that signals a non-existing IP
+address in a geolocation database.
 
 =head1 SUBROUTINES/METHODS
 
