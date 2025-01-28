@@ -14,15 +14,16 @@ our $VERSION = 0.002;
 
 apply Geo::Location::IP::Role::HasIPAddress;
 
-field $domain :param :reader = undef;
+field $domain :param :reader;
 
-#<<<
-ADJUST :params (:$raw = {}) {
-    if (exists $raw->{domain}) {
-        $domain = $raw->{domain};
-    }
+sub _from_hash ($class, $hash_ref, $ip_address) {
+    my $domain = $hash_ref->{domain} // undef;
+
+    return $class->new(
+        domain     => $domain,
+        ip_address => $ip_address,
+    );
 }
-#>>>
 
 1;
 __END__

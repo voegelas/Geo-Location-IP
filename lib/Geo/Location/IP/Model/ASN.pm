@@ -14,21 +14,22 @@ our $VERSION = 0.002;
 
 apply Geo::Location::IP::Role::HasIPAddress;
 
-field $autonomous_system_number :param :reader       = undef;
-field $autonomous_system_organization :param :reader = undef;
+field $autonomous_system_number :param :reader;
+field $autonomous_system_organization :param :reader;
 
-#<<<
-ADJUST :params (:$raw = {}) {
-    if (exists $raw->{autonomous_system_number}) {
-        $autonomous_system_number = $raw->{autonomous_system_number};
-    }
+sub _from_hash ($class, $hash_ref, $ip_address) {
+    my $autonomous_system_number = $hash_ref->{autonomous_system_number}
+        // undef;
 
-    if (exists $raw->{autonomous_system_organization}) {
-        $autonomous_system_organization
-            = $raw->{autonomous_system_organization};
-    }
+    my $autonomous_system_organization
+        = $hash_ref->{autonomous_system_organization} // undef;
+
+    return $class->new(
+        autonomous_system_number       => $autonomous_system_number,
+        autonomous_system_organization => $autonomous_system_organization,
+        ip_address                     => $ip_address,
+    );
 }
-#>>>
 
 1;
 __END__

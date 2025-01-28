@@ -14,15 +14,16 @@ our $VERSION = 0.002;
 
 apply Geo::Location::IP::Role::HasIPAddress;
 
-field $connection_type :param :reader = undef;
+field $connection_type :param :reader;
 
-#<<<
-ADJUST :params (:$raw = {}) {
-    if (exists $raw->{connection_type}) {
-        $connection_type = $raw->{connection_type};
-    }
+sub _from_hash ($class, $hash_ref, $ip_address) {
+    my $connection_type = $hash_ref->{connection_type} // undef;
+
+    return $class->new(
+        connection_type => $connection_type,
+        ip_address      => $ip_address,
+    );
 }
-#>>>
 
 1;
 __END__

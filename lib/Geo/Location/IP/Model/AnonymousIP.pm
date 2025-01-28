@@ -21,33 +21,17 @@ field $is_public_proxy :param :reader      = 0;
 field $is_residential_proxy :param :reader = 0;
 field $is_tor_exit_node :param :reader     = 0;
 
-#<<<
-ADJUST :params (:$raw = {}) {
-    if (exists $raw->{is_anonymous}) {
-        $is_anonymous = $raw->{is_anonymous};
-    }
-
-    if (exists $raw->{is_anonymous_vpn}) {
-        $is_anonymous_vpn = $raw->{is_anonymous_vpn};
-    }
-
-    if (exists $raw->{is_hosting_provider}) {
-        $is_hosting_provider = $raw->{is_hosting_provider};
-    }
-
-    if (exists $raw->{is_public_proxy}) {
-        $is_public_proxy = $raw->{is_public_proxy};
-    }
-
-    if (exists $raw->{is_residential_proxy}) {
-        $is_residential_proxy = $raw->{is_residential_proxy};
-    }
-
-    if (exists $raw->{is_tor_exit_node}) {
-        $is_tor_exit_node = $raw->{is_tor_exit_node};
-    }
+sub _from_hash ($class, $hash_ref, $ip_address) {
+    return $class->new(
+        ip_address           => $ip_address,
+        is_anonymous         => $hash_ref->{is_anonymous}         // 0,
+        is_anonymous_vpn     => $hash_ref->{is_anonymous_vpn}     // 0,
+        is_hosting_provider  => $hash_ref->{is_hosting_provider}  // 0,
+        is_public_proxy      => $hash_ref->{is_public_proxy}      // 0,
+        is_residential_proxy => $hash_ref->{is_residential_proxy} // 0,
+        is_tor_exit_node     => $hash_ref->{is_tor_exit_node}     // 0,
+    );
 }
-#>>>
 
 1;
 __END__
