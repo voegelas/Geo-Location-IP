@@ -183,7 +183,7 @@ version 0.003
 Read MaxMind DB files and map IP addresses to location information such as
 country and city names.
 
-This is a L<Geo::Location::IP::Database::SimpleReader> subclass that throws
+This L<Geo::Location::IP::Database::SimpleReader> subclass throws
 L<Geo::Location::IP::Error::Generic> and
 L<Geo::Location::IP::Error::AddressNotFound> exceptions on unsuccessful
 queries.

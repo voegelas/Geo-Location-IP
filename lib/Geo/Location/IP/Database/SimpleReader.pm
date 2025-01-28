@@ -174,7 +174,7 @@ L<Geo::Location::IP::Database::Reader> if you prefer exceptions.
       locales => ['de', 'en'],
   );
 
-Returns a new reader object.  Dies if the specified file cannot be read.
+Creates a new reader object.  Dies if the specified file cannot be read.
 
 The C<file> parameter is a path to a database in the MaxMind DB file format.
 

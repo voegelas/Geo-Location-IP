@@ -58,7 +58,7 @@ version 0.003
 
 =head1 DESCRIPTION
 
-This class contains the postal details associated with an IP address.
+This class contains postal details associated with an IP address.
 
 All fields may be undefined.
 

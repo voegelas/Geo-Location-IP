@@ -128,7 +128,7 @@ version 0.003
 
 =head1 DESCRIPTION
 
-This class contains records from an IP address query in a city database.
+This class contains records from a city database.
 
 =head1 SUBROUTINES/METHODS
 
@@ -146,7 +146,7 @@ This class contains records from an IP address query in a city database.
     traits              => $traits,
   );
 
-Creates a new object.
+Creates a new object with records from an IP address query in a city database.
 
 All records may contain undefined values.
 

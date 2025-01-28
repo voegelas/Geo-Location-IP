@@ -91,39 +91,39 @@ object.
 
   my $is_anonymous = $anon_ip_model->is_anonymous;
 
-Returns true if the IP address belongs to any sort of anonymous network.
+Returns true if the C<ip_address> belongs to any sort of anonymous network.
 
 =head2 is_anonymous_vpn
 
   my $is_anonymous_vpn = $anon_ip_model->is_anonymous_vpn;
 
-Returns true if the IP address is known to belong to an anonymous VPN
+Returns true if the C<ip_address> is known to belong to an anonymous VPN
 provider.
 
 =head2 is_hosting_provider
 
   my $is_hosting_provider = $anon_ip_model->is_hosting_provider;
 
-Returns true if the IP address belongs to a hosting provider.
+Returns true if the C<ip_address> belongs to a hosting provider.
 
 =head2 is_public_proxy
 
   my $is_public_proxy = $anon_ip_model->is_public_proxy;
 
-Returns true if the IP address belongs to a public proxy.
+Returns true if the C<ip_address> belongs to a public proxy.
 
 =head2 is_residential_proxy
 
   my $is_residential_proxy = $anon_ip_model->is_residential_proxy;
 
-Returns true if the IP address is on a suspected anonymizing network and
+Returns true if the C<ip_address> is on a suspected anonymizing network and
 belongs to a residential ISP.
 
 =head2 is_tor_exit_node
 
   my $is_tor_exit_node = $anon_ip_model->is_tor_exit_node;
 
-Returns true if the IP address is a Tor exit node.
+Returns true if the C<ip_address> belongs to a Tor exit node.
 
 =for Pod::Coverage DOES META
 

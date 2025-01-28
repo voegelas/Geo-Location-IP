@@ -103,6 +103,7 @@ version 0.003
   eval {
     my $asn_model  = $reader->asn(ip => '1.2.3.4');
     my $ip_address = $asn_model->ip_address;
+    my $network    = $ip_address->network;
   };
 
 =head1 DESCRIPTION

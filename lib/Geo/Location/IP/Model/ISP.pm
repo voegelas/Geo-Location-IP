@@ -113,7 +113,7 @@ Returns the name of the ISP associated with the IP address.
 
 =head2 organization
 
-  my $organization = $traits->organization;
+  my $organization = $isp_model->organization;
 
 Returns the name of the organization associated with the IP address.
 
