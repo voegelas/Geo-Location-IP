@@ -15,8 +15,10 @@ our $VERSION = 0.005;
 field $names :param :reader;
 field $name :reader;
 
+# XXX Use ADJUST :params (:$locales)
+field $locales :param;
 #<<<
-ADJUST :params (:$locales) {
+ADJUST {
     for my $locale (@{$locales}) {
         if (exists $names->{$locale}) {
             $name = $names->{$locale};

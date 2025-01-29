@@ -26,8 +26,10 @@ method with_prefixlen () {
     return;
 }
 
+# XXX Use ADJUST :params (:$address)
+field $address :param;
 #<<<
-ADJUST :params (:$address) {
+ADJUST {
     if (defined $address && defined $prefixlen && $prefixlen >= 0) {
         if ($prefixlen <= 32 && index($address, '.') >= 0) {
             my $family         = Socket::AF_INET;
