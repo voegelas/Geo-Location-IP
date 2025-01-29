@@ -28,8 +28,10 @@ apply Geo::Location::IP::Role::HasLocales;
 
 field $db;
 
+# XXX Use ADJUST :params (:$file)
+field $file :param;
 #<<<
-ADJUST :params (:$file) {
+ADJUST {
     $db = IP::Geolocation::MMDB->new(file => $file);
 }
 #>>>
