@@ -71,7 +71,7 @@ None.
 =head1 BUGS AND LIMITATIONS
 
 The distribution uses L<Object::Pad> but will use L<Feature::Compat::Class> as
-soon as Perl supports roles, C<apply> statements and C<ADJUST :params>.
+soon as Perl supports roles.
 
 The differences to GeoIP2 are:
 
