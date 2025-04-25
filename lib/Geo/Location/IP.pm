@@ -102,6 +102,18 @@ objects stringify to the address.
 
 =back
 
+=head1 ACKNOWLEDGEMENTS
+
+Thanks to all who have contributed patches and reported bugs:
+
+=over
+
+=item *
+
+klebom
+
+=back
+
 =head1 AUTHOR
 
 Andreas Vögele E<lt>voegelas@cpan.orgE<gt>

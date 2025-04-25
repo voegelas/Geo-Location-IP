@@ -83,13 +83,15 @@ method isp ($key, $ip) {
 
 our $private_ip_address_regex = qr{
     \A
-    10\.
-    |
-    172\.(?:1[6-9]|2[0-9]|3[01])\.
-    |
-    192\.168\.
-    |
-    f[cd]
+    (?:
+        10\.
+        |
+        172\.(?:1[6-9]|2[0-9]|3[01])\.
+        |
+        192\.168\.
+        |
+        f[cd]
+    )
 }xms;
 
 method _assert_database_type ($type_regex) {
