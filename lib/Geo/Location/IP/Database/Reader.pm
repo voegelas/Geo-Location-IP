@@ -112,7 +112,7 @@ method _assert_ip_address ($key, $ip) {
         my $method  = (caller(1))[3] =~ s{.+::}{}r;
         my $message = "Required param (ip) was missing when calling $method "
             . "on $class";
-            Geo::Location::IP::Error::Generic->throw(message => $message);
+        Geo::Location::IP::Error::Generic->throw(message => $message);
     }
     if ($ip eq 'me') {
         my $class   = ref $self;
