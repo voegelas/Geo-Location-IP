@@ -95,7 +95,7 @@ our $private_ip_address_regex = qr{
 }xms;
 
 method _assert_database_type ($type_regex) {
-    state $type = $self->metadata->database_type;
+    my $type = $self->metadata->database_type;
     if ($type !~ $type_regex) {
         my $class   = ref $self;
         my $method  = (caller(1))[3] =~ s{.+::}{}r;
