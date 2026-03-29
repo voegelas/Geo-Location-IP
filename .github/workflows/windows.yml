@@ -15,9 +15,6 @@ jobs:
       matrix:
         perl: ["5.42", "5.26"]
         distribution: ["default", "strawberry"]
-        exclude:
-          - distribution: strawberry
-            perl: "5.14"
       fail-fast: false
     env:
       MAKECMD: 'gmake'
