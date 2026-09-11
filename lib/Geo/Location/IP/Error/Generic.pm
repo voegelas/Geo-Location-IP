@@ -44,16 +44,15 @@ version 0.005
 
 =head1 SYNOPSIS
 
-  use 5.036;
+  use 5.040;
   use Geo::Location::IP::Database::Reader;
   my $reader = Geo::Location::IP::Database::Reader->new(
     file => '/path/to/Country.mmdb'
   );
-  local $@;
-  eval {
+  try {
     my $country_model = $reader->country(ip => '192.0.2.1');
-  };
-  if (my $e = $@) {
+  }
+  catch ($e) {
     if ($e isa 'Geo::Location::IP::Error::Generic') {
       warn $e->message;
     }
