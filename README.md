@@ -17,7 +17,7 @@ city names.
 
 ## DEPENDENCIES
 
-Requires Perl 5.026 and the modules IP::Geolocation::MMDB and Object::Pad from
+Requires Perl 5.26 and the modules IP::Geolocation::MMDB and Object::Pad from
 CPAN.
 
 Requires databases in the MaxMind DB file format from

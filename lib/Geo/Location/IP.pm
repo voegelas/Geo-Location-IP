@@ -58,7 +58,7 @@ None.
 
 =head1 DEPENDENCIES
 
-Requires Perl 5.026 and the modules L<IP::Geolocation::MMDB> and
+Requires Perl 5.26 and the modules L<IP::Geolocation::MMDB> and
 L<Object::Pad>.
 
 Requires databases in the MaxMind DB file format from
